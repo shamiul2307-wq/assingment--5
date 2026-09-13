@@ -1,3 +1,7 @@
+ 
+
+
+
 {
   "name": "assignment-5",
   "private": true,
@@ -7,7 +11,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "oxlint",
-    "preview": "vite preview"
+    "preview": "vite preview" ,
+    "deploy":"npm run build && surge ./dist rabid-project.surge .sh"
   },
   "dependencies": {
     "react": "^19.2.8",

@@ -1,6 +1,7 @@
 
  
   import type { Technology } from "../types/technology";
+   
 
 interface Props {
   technology: Technology;
@@ -20,7 +21,7 @@ function TechnologyCard({ technology, onAdd, isAdded }: Props) {
         />
 
         <span className="badge">
-          {technology.badge}
+          {technology.difficulty}
         </span>
       </div>
 

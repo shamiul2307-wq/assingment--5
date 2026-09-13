@@ -8,7 +8,7 @@ import TechnologyGrid from "./components/TechnologyGrid";
 import YourStack from "./components/YourStack";
 import Footer from "./components/Footer";
 
-import type { Technology } from "../types/Technology";
+import type { Technology } from "./types/technology";
 import technologyData from "./data/technologies.json";
    
    function App() {  
@@ -25,14 +25,17 @@ import technologyData from "./data/technologies.json";
       setLoading(true);
 
       setTimeout(() => {
-        setTechnologies(technologyData as Technology)
-      }, 500);
-
+        setTechnologies(technologyData as Technology[])
+        
+        setLoading(false)
+    } ,500)
+        
+       
     };
 
     loadTechnologies();
-
-  }, []);
+  },[])
+   
 
   const handleAdd = (technology: Technology) => {
 

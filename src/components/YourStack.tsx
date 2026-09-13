@@ -1,11 +1,11 @@
 
 export default YourStack;
 
-import type{ Technology } from "./TechnologyCard";
+import type{ Technology } from "../types/technology";
 
 interface YourStackProps {
   stack: Technology[];
-  onRemove: (id: string) => void;
+  onRemove: (id:string) => void;
   onRemoveAll: () => void;
 }
 
