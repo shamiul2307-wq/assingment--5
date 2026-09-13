@@ -22,7 +22,7 @@ This project allows users to explore different development technologies and crea
 
 ---
 
-# ⚛️ React Questions & Answers
+# React Questions & Answers
 
 ## 1. What is JSX, and why is it used in React?
 
